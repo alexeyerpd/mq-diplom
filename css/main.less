@@ -5,8 +5,8 @@
 @import './controls';
 
 
-.font-face('OpenSans', '/fonts/OpenSans-Bold', @weight:700);
-.font-face('OpenSans', '/fonts/OpenSans-Regular', @weight:400);
+.font-face('OpenSans', '../fonts/OpenSans-Bold', @weight:700);
+.font-face('OpenSans', '../fonts/OpenSans-Regular', @weight:400);
 
 
 html{ font:bold 20px/1 @font; }
@@ -69,8 +69,8 @@ h3{ text-transform:uppercase; }
 }
 
 .header{ position:relative; color:#fff; font-size:16px; padding:35px @header-padding-lg;
-    &:before{ background:url(/images/football_1920.jpg) 50% 0/cover no-repeat;
-        .sm({ background-image:url(/images/football_767.jpg); });
+    &:before{ background:url(../images/football_1920.jpg) 50% 0/cover no-repeat;
+        .sm({ background-image:url(../images/football_767.jpg); });
     }
 
     &__logo{ margin-bottom:295px;
@@ -249,7 +249,7 @@ h3{ text-transform:uppercase; }
 }
 
 .footer{ position:relative; padding:228px 33px 50px; text-transform:uppercase;
-    &:before{ background:url(/images/game_1920.jpg) 50% 0/cover no-repeat; }
+    &:before{ background:url(../images/game_1920.jpg) 50% 0/cover no-repeat; }
 
     &__wrap{
         .sm({ padding:0 20px; });  
