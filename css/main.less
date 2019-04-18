@@ -23,7 +23,10 @@ h3{ text-transform:uppercase; }
 .container{ min-width:320px; }
 
 .menu{ display:flex; justify-content:center; margin-bottom:75px; .transition();
-    &__link{ width:310px; display:flex; justify-content:center; align-items:center; padding:15px 0;  border-radius:43px; background-color:#5e42b0; .transition();      
+    &__link{ width:310px; display:flex; justify-content:center; align-items:center; padding:15px 0; border-radius:43px; background-color:#5e42b0; .transition(); backface-visibility:hidden;    
+        &:hover{ transform:translateY(2px); }
+        &:active{ transform:translateY(4px); }
+        
         .sm({ width:100%; padding:9px 0; });
     }
 

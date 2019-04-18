@@ -131,6 +131,13 @@ h3 {
   border-radius: 43px;
   background-color: #5e42b0;
   transition: 0.4s;
+  backface-visibility: hidden;
+}
+.menu__link:hover {
+  transform: translateY(2px);
+}
+.menu__link:active {
+  transform: translateY(4px);
 }
 @media screen and (max-width: 767px) {
   .menu__link {
